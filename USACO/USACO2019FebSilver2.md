@@ -11,6 +11,8 @@ I developed a 1002x1002 array with indices from 0 to 1001. What I needed to do w
 
 Using the sample case, I used a "2D difference array" method to find the squares to increment.
 
+|   |   |   |   |   |
+|---|---|---|---|---|
 | 0 | 0 | 0 | 0 | 0 |
 | 0 | 1 | 1 | 1 | 0 |
 | 0 | 1 | 1 | 1 | 0 |
@@ -19,6 +21,8 @@ Using the sample case, I used a "2D difference array" method to find the squares
 
 to
 
+|   |   |   |   |   |
+|---|---|---|---|---|
 | 0 | 0 | 0 | 0 | 0 |
 | 0 | 1 | 0 | 0 | -1 |
 | 0 | 0 | 0 | 0 | 0 |
