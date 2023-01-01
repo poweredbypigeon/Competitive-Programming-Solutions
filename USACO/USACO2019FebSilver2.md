@@ -5,9 +5,9 @@ Not-so-fun fact: I tried this problem last year, and it passed the sample case b
 So this one uses 2d prefix sums, as it seems inefficient to manually increment all of these squares with one coat of paint. I'm not sure why though.
 
 I find that you can solve this by drawing this out on paper, and I figured out what the 2d array should represent: arr[x][x] should represent the number of coats of paint on the square with
-$(x, x), (x+1, x), (x, x+1), (x+1, x+1)$. 
+$(x, x), (x+1, x), (x, x+1), (x+1, x+1)$ as its corners. 
 
-I developed a 1002x1002 array with indices from 0 to 1001. What I needed to do was update a constant number of squares per query (even if they asked you to paint 1,000,000 squares), and run a 2d prefix array.
+I developed a 1002x1002 array with indices from 0 to 1001. What I needed to do was update a constant number of squares per query (even if they asked you to paint 1,000,000 squares), and then preprocess the array
 
 Using the sample case, I used a "2D difference array" method to find the squares to increment.
 
