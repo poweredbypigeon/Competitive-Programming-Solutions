@@ -32,7 +32,7 @@ vector<pair, pair> coords = {(1, 2), (2, 1), (3, 3), (4, 4)}; # new coordinates
 
 The hardest idea in here is how to calculate the number of cows. The empty set can always be found since there are $10^{18}$ different points and $2500$ cows, you'll find an empty square.
 
-You can also always get subsets of 1 cow. 
+You can also always get subsets of 1 cow by selecting only the cell with that cow on it (no 2 cows will be on the same spot)
 
 As for subsets of 2 cows or more, we can loop through all pairs of cows and form rectangles with the cows acting as top-left/top-right/bottom-left/bottom-right corners. Some of these subsets may include 3 or more cows
 (e.g. the rectangle with cow 2 and cow 4 in it has cow 3).
@@ -42,7 +42,14 @@ What's very handy is the fact that no two cows have the same x coordinate, or th
 The solution then mentions that we can get all the other rectangles (of course, not every rectangle has its cows in the corner) by checking for any cows above the rectangle and below the rectangle. It's entirely possible to
 go in the opposite direction (look for any cows to the right and to the left of the rectangle), I assume the solution authors just chose the y axis at random.
 
-We can use 2d prefix sums to find the cows above and below the axes. Let's say you have 3 cows above the rectangle and 2 cows below. There are (3+1)(2+1) = 12 possibilities here (note that to get the topmost cow you must select the other 2 cows).
+We can use 2d prefix sums to find the cows above and below the axes. Let's say you have 3 cows above the rectangle and 2 cows below. There are (3+1)(2+1) = 12 possibilities here:
+
+- don't extend the rectangle upwards
+- extend the rectangle to include 1 of the topmost cows
+- extend the rectangle to include 2 of the topmost cows
+- extend the rectangle to include 3 of the topmost cows
+
+And you can do the same thing with the bottom part of the rectangle.
 
 Hopefully this clears the solution up!
 
