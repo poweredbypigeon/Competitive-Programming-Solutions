@@ -49,15 +49,7 @@ We can use 2d prefix sums to find the cows above and below the axes. Let's say y
 - extend the rectangle to include 2 of the topmost cows
 - extend the rectangle to include 3 of the topmost cows
 
-And you can do the same thing with the bottom part of the rectangle.
+And you can do the same thing with the bottom part of the rectangle. The hardest part once I read the editorial was to implement the prefix sums.
 
 Hopefully this clears the solution up!
 
-
-
-e
-
-
-
-
-e
