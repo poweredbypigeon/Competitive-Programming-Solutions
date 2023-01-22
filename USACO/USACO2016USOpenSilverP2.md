@@ -1,14 +1,12 @@
-== DIAMOND COLLEFCTOR SOL ==
-
-
-HERE'S AN IDEA:
+**DIAMOND COLLECTOR SOL**
 
 So it's optimal for one diamond case to have diamonds greater than size than any of the diamond cases in the other.
 
 So [9, 12], and [10] would be suboptimal. 
 
-Sort the array. 
+First of all, like any other 2 pointers problems, sort the array. 
 
+This one I had to look at the solution for:
 
 canTakeLeft[n]- how many diamonds we can take assuming index i is the samllest diamond
 
