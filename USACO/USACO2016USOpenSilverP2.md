@@ -1,4 +1,4 @@
-**DIAMOND COLLECTOR SOL**
+# DIAMOND COLLECTOR SOL
 
 So it's optimal for one diamond case to have diamonds greater than size than any of the diamond cases in the other.
 
